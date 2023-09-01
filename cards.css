@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
+.columns {
+    background-color: #ffffff;
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 20px 25px 0 rgba(91, 1, 60, 0.2)
+}
+
+.price .header {
+  background-color: #0c003c;
+  color: rgb(137, 193, 233);
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #f5abab;
+  font-size: 20px;
+}
+
+.button { 
+  width: 100px;
+  height: 35px;
+  background-color: #0c003c;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.hov:hover{
+  background-color: #c396e2;
+  
+}
+ .header{
+  animation-name: fadeIN;
+  animation: fadeIN 2s linear 2s infinite alternate none;
+ }
+.cost {
+  background-color: #f5abab;
+  animation: fadeIN 5s ;
+
+}
+@keyframes fadeIN{
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
